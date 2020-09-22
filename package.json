@@ -1,0 +1,30 @@
+{
+  "name": "hebraisch-umschrift",
+  "version": "1.0.0",
+  "description": "a site for transliterating Hebrew to German characters using the umschrift package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "clear && webpack",
+    "start:dev": "webpack-dev-server"
+  },
+  "keywords": [
+    "hebrew",
+    "german",
+    "umschrift"
+  ],
+  "author": "charlesLoder",
+  "license": "MIT",
+  "devDependencies": {
+    "chokidar": "^3.4.2",
+    "fsevents": "^2.1.3",
+    "html-webpack-plugin": "^4.5.0",
+    "script-ext-html-webpack-plugin": "^2.1.4",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "umschrift": "^0.1.3"
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      @font-face {
+        font-family: "SBL Hebrew";
+        src: local("SBL_Hbrw.ttf");
+        unicode-range: U+0590-05FF, U+FB1D-FB4F;
+      }
+
+      textarea {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      #input {
+        text-align: right;
+        font-family: "SBL Hebrew", "Times New Roman", serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>Hebräisch <small class="text-muted">Umschrift</small></h1>
+        <p>
+          Hebräisch Umschrift is a UI for using the
+          <code
+            ><a
+              href="https://www.npmjs.com/package/umschrift"
+              target="_blank"
+              rel="noopener noreferrer"
+              >umschrift</a
+            ></code
+          >
+          package. It serves to transliterate liturgical Hebrew into German
+          orthography using a method developed by Rabbi Zsolt
+        </p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <textarea
+            class="w-100"
+            name="input"
+            id="input"
+            cols="30"
+            rows="5"
+          ></textarea>
+          <div class="m-2 d-flex justify-content-center">
+            <button id="btn" class="btn btn-secondary">Transliterate</button>
+          </div>
+          <textarea
+            class="w-100"
+            name="output"
+            id="output"
+            cols="30"
+            rows="5"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+    <!-- end of container -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          Last Update: <%= htmlWebpackPlugin.options.year() %>-<%=
+          htmlWebpackPlugin.options.month() %>-<%=
+          htmlWebpackPlugin.options.day() %>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
