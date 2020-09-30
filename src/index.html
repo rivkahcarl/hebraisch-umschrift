@@ -43,7 +43,20 @@
             ></code
           >
           package. It serves to transliterate liturgical Hebrew into German
-          orthography using a method developed by Rabbi Zsolt
+          orthography using a method developed in partnership with Rabbi Zsolt Balla, <a href="http://www.irg-leipzig.de/page/rabbiner">IRG Leipzig</a>
+        </p>
+        <br>
+        <p>
+          <h4> Here's how it works:</h4></p>
+          <p>
+          1. Insert Hebrew text with <b>Nikkud.</b><br>
+          Hebrew text without Nikkud cannot produce proper vowel sounds. <br>
+          You can copy and paste any text from 
+          <a href="https://www.sefaria.org/texts">Sefaria</a>, 
+          <a href="https://www.mechon-mamre.org/i/t/t0.htm">Machon Mamre</a>, 
+          <a href="https://www.stepbible.org/">Stepbible.org</a> or other preferred sources <br>
+          2. Click on the Transliterate button <br>
+          3. Copy transliteration for use<br>
         </p>
       </div>
       <div class="row justify-content-center">
@@ -54,6 +67,7 @@
             id="input"
             cols="30"
             rows="5"
+            placeholder="עִבְרִית" style="text-align: right; font: 20px SBL Hebrew, Times New Roman, serif; "
           ></textarea>
           <div class="m-2 d-flex justify-content-center">
             <button id="btn" class="btn btn-secondary">Transliterate</button>
@@ -64,8 +78,15 @@
             id="output"
             cols="30"
             rows="5"
+            placeholder="iwrit" style="font: italic 16px Charis SIL Compact, Charis SIL, Times New Roman, serif;"
           ></textarea>
         </div>
+      </div>
+      <div class="row">
+        <p><i><font size="1">Additional Disclaimers<br>
+          1. Some technical difficulties arise when using particular browsers, Safari or Firefox on Android devices. For best usage, use a Google Chrome browser. <br>
+             2. The divine name used is a direct transliteration of the pronuncination of the name. The tool does not currently support other versions. We hope to expand options for Divine names in a future version.</i></font>
+          </p>
       </div>
     </div>
     <!-- end of container -->
@@ -76,6 +97,13 @@
           htmlWebpackPlugin.options.month() %>-<%=
           htmlWebpackPlugin.options.day() %>
         </p>
+      <div class="footer-container">
+        <div class="footer-contact">
+          <a href="https://independentresearcher.academia.edu/CharlesLoder">Charles Loder</a> and 
+          <a href="https://www.linkedin.com/in/rivkah-carl-875029b3/">Rivkah Carl</a> © 2020 <br>
+          <p><a href="mailto:rivkah.carl@gmail.com">Contact</a> us with feedback or questions</p>
+        </div>
+      </div>
       </div>
     </footer>
   </body>
