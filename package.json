@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "clear && webpack",
     "start:dev": "webpack-dev-server",
-    "push:gh-pages": "npx push-dir --dir=dist --branch=gh-pages"
+    "push:gh-pages": "npm run build && npx push-dir --dir=dist --branch=gh-pages"
   },
   "keywords": [
     "hebrew",
@@ -27,6 +27,6 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "umschrift": "^0.1.5"
+    "umschrift": "^0.1.6"
   }
 }
